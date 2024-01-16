@@ -1,8 +1,6 @@
 # Doc Hunter
 
-### Find and download technical documentation
-
-### using Modal and Playwright
+### Find and download technical documentation using Modal and Playwright
 
 ## Motivation
 
@@ -10,7 +8,7 @@ We use a lot of bleeding-edge programming libraries. Out-of-the-box Github Copil
 
 ## Requirements
 
-Just one: a [modal.com](https://modal.com) account
+Just one: a [Modal.com](https://modal.com) account
 
 ## Usage
 
