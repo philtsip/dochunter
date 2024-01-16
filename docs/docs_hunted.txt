@@ -1,0 +1,11 @@
+Modal
+https://modal.com/docs,https://modal.com/docs/guide,https://modal.com/docs/reference
+
+Theatre.js
+https://www.theatrejs.com/docs/latest,https://www.theatrejs.com/docs/latest/getting-started/with-react-three-fiber,https://www.theatrejs.com/docs/latest/extensions/react-three-fiber,https://www.theatrejs.com/docs/latest/api/studio,https://www.theatrejs.com/docs/latest/api/r3f
+
+Remotion
+https://www.remotion.dev/docs/,https://www.remotion.dev/docs/api
+
+Threlte
+https://threlte.xyz/docs/learn/getting-started/introduction,https://threlte.xyz/docs/examples/examples,https://threlte.xyz/docs/reference/core/getting-started,https://threlte.xyz/docs
