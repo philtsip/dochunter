@@ -21,6 +21,13 @@ def read_text_file(file_path: str) -> str:
     """Reads a text file and returns its contents as a string."""
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
+    
+# calculate number of words in text file
+def num_words_from_string(string: str) -> int:
+    """Returns the number of words in a text string."""
+    words = string.split()
+    num_words = len(words)
+    return num_words
 
 # calculate number of tokens in text file
 def num_tokens_from_string(string: str, encoding_model: str, context_length: int) -> int:
@@ -50,8 +57,11 @@ file = read_text_file(file_path)
 
 num_tokens = num_tokens_from_string(file, MODELS[MODEL]["id"], MODELS[MODEL]["context_length"])
 
+num_words = num_words_from_string(file)
+
 cost = cost_of_tokens(num_tokens, MODELS[MODEL]["price_per_1k_input"])
 
+print(f"{num_words:,} words")
 print(f"{num_tokens:,} tokens")
 print(f"${cost:,.2f} per input")
 
