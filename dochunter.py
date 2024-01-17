@@ -103,6 +103,9 @@ def scrape(links_to_hunt: list[str] = ["https://modal.com/docs"]):
     # filter out duplicate and non-reference links
     for ref_page in found_ref_pages:
         for link in ref_page["links"]:
+            # remove anything after the first #
+            link = link.split("#")[0]
+            
             # if link starts with any of the links_to_hunt urls and is not already in returned_links set then add it
             if (
                 any(link.startswith(l) for l in links_to_hunt)
