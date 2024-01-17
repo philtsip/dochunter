@@ -6,11 +6,10 @@ from datetime import datetime
 
 root_dir = '.'
 
-if len(sys.argv) < 2:
-    print("Please provide an output file name.")
-    sys.exit()
+output_file = "output.json"
 
-output_file = sys.argv[1] #output file name
+if len(sys.argv) > 1:
+    output_file = sys.argv[1] #output file name
 
 files_data = []
 text_file_extensions = ['.txt', '.md']
@@ -38,4 +37,4 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
                 continue
 
 with open(output_file, 'w') as f:
-    json.dump(files_data, f, ensure_ascii=False, indent=4)
+    json.dump(files_data, f, ensure_ascii=False)
