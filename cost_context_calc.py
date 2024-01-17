@@ -2,6 +2,8 @@
 # Copyright 2024, Philipp Tsipman
 # MIT License
 
+# Usage: python cost_context_calc.py <file_path>
+
 # SETUP
 import tiktoken
 import sys
